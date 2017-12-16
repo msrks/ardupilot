@@ -941,6 +941,7 @@ private:
 #else
     ModeAcro mode_acro{*this};
 #endif
+    ModeNewMode mode_newmode{*this};
     ModeAltHold mode_althold{*this};
     ModeAuto mode_auto{*this, mission, circle_nav};
 #if AUTOTUNE_ENABLED == ENABLED

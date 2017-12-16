@@ -19,6 +19,10 @@ Copter::Mode *Copter::mode_from_mode_num(const uint8_t mode)
             ret = &mode_stabilize;
             break;
 
+        case NEW_MODE:
+            ret = &mode_newmode;
+            break;
+
         case ALT_HOLD:
             ret = &mode_althold;
             break;
